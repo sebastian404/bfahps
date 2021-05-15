@@ -1,0 +1,205 @@
+Game Variables
+==============
+The game uses a number of variables when communicating with the Dynamic services.
+
+
+Function variables
+------------------
+Variables used when calling the Dynamic services.
+
+- `HudUpdate`
+  - An integer representing if the Hub variables should be updated, set to `1` as duties are fully completed.
+- `DutiesUpdate`
+  - An integer representing if the Player's Duties variables should to be updated, set to `1` as new duties are assigned.
+- `AdventureListUpdate`
+  - An integer representing if the AdventureList variable should be updated, set to `1` as current adventure is fully completed.
+- `PersonalHighscoreUpdate`
+  - An integer representing if the Player's Highest score variable should be updated, set to `1` if minigame score is higher than the current high score.
+
+
+Save Game variables
+-------------------
+Variables used in the players save game.
+
+- `AvatarCode`
+  - A 6 character string representing the player Best Friend Code.
+  - The string is a 6 digit Hexadecimal number that's unique for each player.
+- `AvatarChosen`
+  - An integer representing the Player's Avatar has been selected.
+- `AvatarType`
+  - An integer representing the Player's Avatar has been selected.
+  - Consisting of value between 1 and 3, determines how many Attributes the Avatar has.
+- `AvatarName`
+  - A 20 character string representing the player's Avatar Name.
+- `AvatarAttrib1`
+  - An integer representing the Player's Avatar Legs type.
+  - Consisting of value between 1 and 6
+- `AvatarAttrib2`
+  - An integer representing the Player's Avatar Body type.
+  - Consisting of value between 1 and 6
+- `AvatarAttrib3`
+  - An integer representing the Player's Avatar Head type.
+  - Consisting of value between 1 and 6
+- `AvatarColor1`
+  - An integer representing the Player's Avatar Legs color.
+  - Consisting of value between 1 and 16
+- `AvatarColor2`
+  - An integer representing the Player's Avatar Body color.
+  - Consisting of value between 1 and 16
+- `AvatarColor3`
+  - An integer representing the Player's Avatar Head color.
+  - Consisting of value between 1 and 16
+- `AvatarHat`
+  - An integer representing the Player's Avatar Accessory.
+- `AvatarBuddy`
+  - An integer representing the Player's Avatar Buddy.
+- `AvatarCostume`
+  - An integer representing the Player's Avatar Costume.
+- `AvatarTransport`
+  - An integer representing the Player's Avatar Transport.
+- `BirthdayHat`
+  - An integer representing the player has unlocked the first Birthday Hat for the Player's Avatar.
+  - Consisting of 0 or 1, a 1 represents the Hat has been unlocked.
+- `NewBirthdayHat`
+  - An integer representing the player has unlocked the second Birthday Hat for the Player's Avatar.
+  - Consisting of 0 or 1, a 1 represents the Hat has been unlocked.
+- `AvatarRoom`
+  - An integer representing the player has unlocked a room in Mansion.
+  - Consisting of 0 or 1, a 1 represents the room has been unlocked.
+- `Bus`
+  - An integer representing the player has unlocked a room in Mansion.
+  - Consisting of 0 or 1, a 1 represents the room has been unlocked.
+- `HudCitizenship`
+  - An integer representing the Player's Citizenship level.
+  - Citizenship increases from 0 to 9 as player completes various Duties.
+- `HudFriendship`
+  - A 4 character string representing the number of Favours completed.
+  - The string consisting of a values been 0 to 4, 0 for no favour completed. and 1 to 4 representing each character a favour is owed to.
+- `HudPopularity`
+  - An integer representing the Player's Popularity level.
+  - Citizenship increases from 0 to 9 as player completes various Favours.
+- `MusicTrack`
+  - An integer representing the music track currently playing.
+  - Consisting of value between 1 to 20, or 99 to represent no track.
+- `Duty1Type`
+  - An integer representing the type of Duty.
+- `Duty1Value`
+  - An integer representing how many tasks the Duty consists of.
+- `Duty1Total`
+  - An integer representing how many tasks the player has left to complete.
+- `Duty2Type`
+  - An integer representing the type of Duty.
+- `Duty2Value`
+  - An integer representing how many tasks the Duty consists of.
+- `Duty2Total`
+  - An integer representing how many tasks the player has left to complete.
+- `Duty3Type`
+  - An integer representing the type of Duty.
+- `Duty3Value`
+  - An integer representing how many tasks the Duty consists of.
+- `Duty3Total`
+  - An integer representing how many tasks the player has left to complete.
+- `FavorDone`
+  - An integer representing if the current favour in progress is completed.
+  - Consisting of 0 or 1, a 1 represents the favour at that offset has been completed.
+- `FavorLastType`
+  - An integer representing a value of the last favour type completed.
+- `FavorWilt`
+  - An integer representing the number of favours completed for Wilt
+- `FavorEduardo`
+  - An integer representing the number of favours completed for Eduardo.
+- `FavorFrankie`
+  - An integer representing the number of favours completed for Frankie.
+- `FavorMac`
+  - An integer representing the number of favours completed for Mac.
+- `FavorType`
+  - An integer representing the type of favour currently in progress.
+- `FavorStep`
+  - An integer representing the progress of the favour currently in progress.
+- `FavorChar`
+  - An integer representing the character the favour currently in for.
+- `FavorRecip`
+  - An integer, use currently unknow.
+- `FavorObject`
+  - An integer, use currently unknow.
+- `AdventuresList`
+  - A 150 character string representing completed adventures.
+  - Consisting of 0 or 1, a 1 represents the adventure at that offset has been completed.
+- `AdventureType`
+  - An integer representing the type of adventure currently in progress.
+- `AdventureStep`
+  - An integer representing the progress of the adventure currently in progress.
+- `AdventureDate`
+  - An integer representing the date of the adventure currently in progress.
+  - The date represent when the adventure was added to the game.
+- `MinigamesList`
+  - A 100 character string representing unlocked minigames.
+  - Consisting of value between 0 to 3, 0 represents the minigame is locked, and 1 to 3 for the dificutly level of the minigame at that offset has been unlocked.
+- `MiniGame(n)Mode(n)PersonalBestHighscore`
+  - An integer representing the players highest score for each difficulty level of each Mini Game.
+- `PhotosList1`
+  - A 100 character string representing photos added to the 'Imaginary Friends' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `PhotosList2`
+  - A 100 character string representing photos added to the 'Wilt' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `PhotosList3`
+  - A 100 character string representing photos added to the 'Mac & Bloo' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `PhotosList4`
+  - A 100 character string representing photos added to the 'Eduardo' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `PhotosList5`
+  - A 100 character string representing photos added to the 'Coco' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `MyBestFriendPhotoList`
+  - A 100 character string representing photos added to the 'My Best friend' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `FurnitureList`
+  - A 350 character string representing furniture items unlocked.
+  - Consisting of 0 or 1, a 1 represents the furniture item at that offset has been unlocked.
+- `CodesList`
+  - A 100 character string representing Secret codes unlocked.
+  - Consisting of 0 or 1, a 1 represents the Secret code at that offset has been unlocked.
+- `ObjectsList`
+  - A 100 character string representing objects unlocked.
+  - Consisting of 0 or 1, a 1 represents the Object at that offset has been unlocked.
+- `ToysList`
+  - A 100 character string representing photos added to the 'My Best friend' Photo Album.
+  - Consisting of 0 or 1, a 1 represents the Photo at that offset has been unlocked.
+- `BestFriendCode`
+  - A 6 character string representing the player's Best Friend BestFriend Code.
+  - The string is a 6 digit Hexadecimal number that's unique for each player.
+- `BestFriendAvatarChosen`
+  - An integer representing the Player's Best Friend's Avatar has been selected.
+- `BestFriendAvatarType`
+  - An integer representing the Player's Best Friend's Avatar type.
+  - Consisting of value between 1 and 3, determines how many Attributes the Avatar has.
+- `BestFriendAvatarName`
+  - A 20 character string representing the player's Best Friend's Avatar Name.
+- `BestFriendAvatarAttrib1`
+  - An integer representing the Player's Best Friend's Avatar Legs type.
+  - Consisting of value between 1 and 6
+- `BestFriendAvatarAttrib2`
+  - An integer representing the Player's Best Friend's Avatar Body type.
+  - Consisting of value between 1 and 6
+- `BestFriendAvatarAttrib3`
+  - An integer representing the Player's Best Friend's Avatar Head type.
+  - Consisting of value between 1 and 6
+- `BestFriendAvatarColor1`
+  - An integer representing the Player's Best Friend's Avatar Legs color.
+  - Consisting of value between 1 and 16
+- `BestFriendAvatarColor2`
+  - An integer representing the Player's Best Friend's Avatar Body color.
+  - Consisting of value between 1 and 16
+- `BestFriendAvatarColor3`
+  - An integer representing the Player's Best Friend's Avatar Head color.
+  - Consisting of value between 1 and 16
+- `BestFriendAvatarHat`
+  - An integer representing the Player's Best Friend's  Avatar Accessory.
+- `BestFriendAvatarBuddy`
+  - An integer representing the Player's Best Friend's Avatar Buddy.
+- `BestFriendAvatarCostume`
+  - An integer representing the Player's Best Friend's Avatar Costume.
+- `BestFriendAvatarTransport`
+  - An integer representing the Player's Best Friend's Avatar Transport.

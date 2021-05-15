@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Big Fat Awesome House Party | Cartoon Network</title>
+    <script>
+    function getGame()
+    {
+      var theGameString;
+      var urlString = "/toonahp/game/game.dcr?version=2.0.0";
+      var paramString = "sw1::"+window.location.protocol+"//"+window.location.host+"/house/Service::sw2::{{ version }}";
+      var foo = new String (paramString);
+      var allParams = foo.split("::");
+      theGameString = '<object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" ';
+      theGameString += 'codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,0,0,0" width="600" height="400">';
+      theGameString += '<param name="src" value="' + urlString + '">';
+      theGameString += '<param name="swRemote" value="swContextMenu=\'false\' swRestart=\'false\'">';
+      theGameString += '<param name="' + allParams[0] + '" value="' + allParams[1] + '">';
+      theGameString += '<param name="' + allParams[2] + '" value="' + allParams[3] + '">';
+      theGameString += '<param name="' + allParams[4] + '" value="' + allParams[5] + '">';
+      theGameString += '<param name="' + allParams[6] + '" value="' + allParams[7] + '">';
+      theGameString += '<param name="' + allParams[8] + '" value="' + allParams[9] + '">';
+      theGameString += '<param name="' + allParams[10] + '" value="' + allParams[11] + '">';
+      theGameString += '<param name="' + allParams[12] + '" value="' + allParams[13] + '">';
+      theGameString += '<embed src="' + urlString + '" pluginspage="http://www.macromedia.com/shockwave/download/" width="600" ';
+      theGameString += 'height="400" swRemote="swContextMenu=\'false\' swRestart=\'false\'" ' + allParams[0] + '="' + allParams[1] + '" ' + allParams[2] + '="' + allParams[3] + '" ' + allParams[4] + '="' + allParams[5] + '" ';
+      theGameString += allParams[6] + '="' + allParams[7] + '" ' + allParams[8] + '="' + allParams[9] + '" ' + allParams[10] + '="' + allParams[11] + '" ';
+      theGameString += allParams[12] + '="' + allParams[13] + '"></embed></object>';
+      document.getElementById('displayBlock').innerHTML = theGameString;
+    }
+    </script>
+  </head>
+  <body bgcolor="#C5D9EB" background="/toon/promos/200604_bfahp/tools/gamesite/img/bkgd.jpg" onload="getGame();">
+    <div align="center">
+      <table width="1011" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td colspan="3"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_08.gif" width="1012" height="36" alt="" border="0"></td>
+        </tr>
+      </table>
+      <table width="1011" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td rowspan="5"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_09.gif" width="90" height="600" alt="" border="0" usemap="#game_09"></td>
+          <td colspan="5"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_10.jpg" width="850" height="182" alt="" border="0" usemap="#game_10"></td>
+          <td rowspan="5"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_11.gif" width="72" height="600" alt=""></td>
+        </tr>
+        <tr valign="top">
+          <td><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_12.jpg" width="124" height="364" alt=""></td>
+          <td rowspan="2">
+            <div id="displayBlock">
+              <div style="border: 0; margin: 0; padding: 0; text-align: center">
+              </div>
+            </div>
+          </td>
+          <td colspan="3"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_14.jpg" width="126" height="364" alt=""></td>
+        </tr>
+        <tr valign="top">
+          <td><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_15.jpg" width="124" height="36" alt=""></td>
+          <td rowspan="2"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_16.jpg" width="14" height="39" alt=""></td>
+          <td rowspan="2" id="logButtonDiv"><a href="/house/Login?action=logout"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_17_off.jpg" width="76" height="39" alt="log out" border="0" name="logoutBtn" id="logoutBtn"></a></td>
+          <td rowspan="2"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_18.jpg" width="36" height="39" alt=""></td>
+        </tr>
+        <tr valign="top">
+          <td><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_19.jpg" width="124" height="3" alt=""></td>
+          <td><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_20.jpg" width="600" height="3" alt=""></td>
+        </tr>
+        <tr valign="top">
+          <td colspan="5"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_21.jpg" width="850" height="15" alt=""></td>
+        </tr>
+      </table>
+      <table width="1011" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td colspan="3"><img src="/toon/promos/200604_bfahp/tools/gamesite/img/game_22.gif" width="1012" height="36" alt="" border="0" usemap="#game_08"></td>
+        </tr>
+      </table>
+  </body>
+</html>
